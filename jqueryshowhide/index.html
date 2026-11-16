@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hide and Show Password</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+        }
+        .form-group {
+            margin-bottom: 12px;
+        }
+        input[type="password"], input[type="text"] {
+            padding: 8px;
+            width: 240px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-group">
+        <!-- Input password awal -->
+        <input type="password" id="txtPassword" value="rahasia123">
+    </div>
+    <div class="form-group">
+        <!-- Checkbox untuk show/hide -->
+        <label>
+            <input type="checkbox" id="chkShow"> Show
+        </label>
+    </div>
+
+    <!-- Memuat jQuery lokal (sesuaikan nama file jika memakai versi lain) -->
+    <script src="jquery-4.0.0.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
