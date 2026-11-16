@@ -1,0 +1,193 @@
+
+Style · CSS
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ 
+body {
+    background-color: #dcecf9;
+    color: #34495e;
+    padding: 20px;
+}
+ 
+/* Container Pembungkus Utama */
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    border: 2px solid #9fc5e3;
+    border-radius: 14px;
+    padding: 15px;
+    background-color: #f7fbff;
+    box-shadow: 0 4px 14px rgba(47, 102, 144, 0.15);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+ 
+/* KETENTUAN 1: Background color berbeda untuk tiap tag */
+ 
+/* 1. Tag HEADER */
+header {
+    background-image: url("header.avif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+    filter: brightness(1.08) saturate(0.9); /* header sedikit lebih soft */
+}
+ 
+header h1 {
+    color: #ffffff;
+    font-size: 2.2rem;
+    letter-spacing: 4px;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.8);
+}
+ 
+/* KETENTUAN 2: Tag NAV menggunakan Flexbox (Logo di kiri, Menu di kanan) */
+nav {
+    background-color: #dbeefa; /* Warna 2 */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+}
+ 
+nav .logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #2f6690;
+}
+ 
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+ 
+nav ul li a {
+    text-decoration: none;
+    color: #2f6690;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+ 
+nav ul li a:hover {
+    background-color: #7fb3da;
+    color: #ffffff;
+}
+ 
+/* KETENTUAN 3 & 4: Tag SECTION menggunakan CSS Grid untuk membungkus ARTICLE & ASIDE */
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 15px;
+    padding: 15px;
+    background-color: #e6eff7; /* Warna 3 */
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+}
+ 
+/* Tag ARTICLE */
+article {
+    background-color: #f4f9fe; /* Warna 4 */
+    padding: 20px;
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+    min-height: 250px;
+}
+ 
+article h2 {
+    margin: 16px 0 6px;
+    font-size: 1.2rem;
+    color: #2f6690;
+}
+ 
+article p {
+    margin: 0 0 10px;
+    line-height: 1.5;
+}
+ 
+article code {
+    background: #e1f1fb;
+    padding: 1px 5px;
+    border-radius: 4px;
+    font-size: 0.9em;
+}
+ 
+/* Tag ASIDE */
+aside {
+    background-color: #d0e6f7; /* Warna 5 */
+    padding: 20px;
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+    min-height: 250px;
+}
+ 
+aside h2 {
+    color: #2f6690;
+}
+ 
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+}
+ 
+aside li {
+    margin-bottom: 10px;
+}
+ 
+aside a {
+    color: #2f6690;
+    text-decoration: none;
+    font-weight: bold;
+}
+ 
+aside a:hover {
+    text-decoration: underline;
+}
+ 
+/* KETENTUAN 6: Styling Table Data Diri */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+    background-color: #ffffff;
+}
+ 
+table, th, td {
+    border: 1px solid #9fc5e3;
+}
+ 
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+ 
+th {
+    background-color: #e1f1fb;
+    color: #2f6690;
+    width: 35%;
+}
+ 
+/* Tag FOOTER */
+footer {
+    background-color: #c2dcf0; /* Warna 6 */
+    color: #2f6690;
+    text-align: center;
+    padding: 20px;
+    border: 2px solid #9fc5e3;
+    border-radius: 10px;
+}
